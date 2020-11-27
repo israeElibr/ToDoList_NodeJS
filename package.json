@@ -1,0 +1,27 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "description": "todo listr with mean stack",
+  "main": "list.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/israeElibr/ToDoList.git"
+  },
+  "author": "Israe Elibr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/israeElibr/ToDoList/issues"
+  },
+  "homepage": "https://github.com/israeElibr/ToDoList#readme",
+  "dependencies": {
+    "-": "0.0.1",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "save": "^2.4.0"
+  }
+}

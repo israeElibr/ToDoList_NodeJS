@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste </title>
+</head>
+
+<!-- TO DO List -->
+
+<div>
+    <h3><i class="ion ion-clipboard mr-1"></i><b>To Do List</b></h3>
+</div>
+<div>
+    <% todolist.forEach(function(todo, index){ %>
+        <div>
+            <span>
+                    <%= todo %>
+                </span>
+            <a href="/todo/supprimer/<%= index %>">
+                Supp
+            </a>
+        </div>
+        <% }); %>
+</div>
+<!-- /.panel-body -->
+<form class="col-12 mx-auto" action="/todo/ajouter/" method="POST">
+    <div class="input-group">
+        <input type="text" name="newtodo" placeholder="New ToDo List" autofocus/>
+        <span><button type="submit" >Submit</button></span>
+    </div>
+</form>
+
+<body>
+
+</body>
+
+</html>
